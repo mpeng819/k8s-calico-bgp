@@ -1,0 +1,39 @@
+---
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  name: k8s-node1
+spec:
+  bgp:
+    asNumber: 64516
+    ipv4Address: 10.0.0.9/31
+
+---
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  name: k8s-node2
+spec:
+  bgp:
+    asNumber: 64517
+    ipv4Address: 10.0.0.11/31
+
+---
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  name: k8s-node3
+spec:
+  bgp:
+    asNumber: 64518
+    ipv4Address: 10.0.0.13/31
+
+---
+apiVersion: projectcalico.org/v3
+kind: Node
+metadata:
+  name: k8s-node4
+spec:
+  bgp:
+    asNumber: 64519
+    ipv4Address: 10.0.0.15/31
