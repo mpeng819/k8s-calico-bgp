@@ -1,0 +1,39 @@
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: node1.ebgp
+spec:
+  node: k8s-node1
+  peerIP: 10.0.0.8
+  asNumber: 64514
+
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: node2.ebgp
+spec:
+  node: k8s-node2
+  peerIP: 10.0.0.10
+  asNumber: 64514
+
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: node3.ebgp
+spec:
+  node: k8s-node3
+  peerIP: 10.0.0.12
+  asNumber: 64515
+
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: node4.ebgp
+spec:
+  node: k8s-node4
+  peerIP: 10.0.0.14
+  asNumber: 64515
