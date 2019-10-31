@@ -1,19 +1,10 @@
-apiVersion: projectcalico.org/v3
-items:
-- apiVersion: projectcalico.org/v3
-  kind: IPPool
-  metadata:
-    creationTimestamp: 2019-10-29T11:30:24Z
+kind: IPPool
+metadata:
     name: default-ipv4-ippool
-    resourceVersion: "3000"
-    uid: 667b8ffb-aaa9-4267-a783-6a91345c3447
-  spec:
+spec:
     blockSize: 26
     cidr: 192.168.0.0/16
     ipipMode: Never
     natOutgoing: true
     nodeSelector: all()
     vxlanMode: Never
-kind: IPPoolList
-metadata:
-  resourceVersion: "20524"
