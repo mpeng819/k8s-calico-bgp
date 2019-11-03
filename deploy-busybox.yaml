@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+        type: front-end
+    spec:
+      containers:
+        - name: busybox-container
+          image: busybox
+          command:
+            - sleep
+            - "3600"
+  replicas: 4
+  selector:
+    matchLabels:
+      type: front-end
