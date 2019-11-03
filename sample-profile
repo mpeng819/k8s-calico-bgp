@@ -1,0 +1,15 @@
+---
+apiVersion: projectcalico.org/v3
+kind: GlobalNetworkPolicy
+metadata:
+  name: sample-profile
+spec:
+  ingress:
+  - action: Allow
+    source:
+      selector: app == 'myapp'
+    destination: {}
+  egress:
+  - action: Allow
+    source: {}
+    destination: {}
