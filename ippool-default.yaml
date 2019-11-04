@@ -1,10 +1,15 @@
-kind: IPPool
-metadata:
+apiVersion: projectcalico.org/v3
+items:
+- apiVersion: projectcalico.org/v3
+  kind: IPPool
+  metadata:
     name: default-ipv4-ippool
-spec:
+  spec:
     blockSize: 26
     cidr: 192.168.0.0/16
-    ipipMode: Never
+    ipipMode: CrossSubnet
     natOutgoing: true
     nodeSelector: all()
     vxlanMode: Never
+kind: IPPoolList
+metadata:
