@@ -2,7 +2,7 @@
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:
-  name: sample-profile
+  name: sample-network-policy
 spec:
   ingress:
   - action: Allow
@@ -12,4 +12,5 @@ spec:
   egress:
   - action: Allow
     source: {}
-    destination: {}
+    destination:
+      selector: app == 'myapp'
