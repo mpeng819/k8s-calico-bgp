@@ -13,7 +13,6 @@ calicoctl get nodes -o wide
 calicoctl get bgpconfig -o wide
 calicoctl get ippool -o wide
 calicoctl get bgppeer
-
 sudo calicoctl node status
 
 
