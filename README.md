@@ -8,7 +8,7 @@ Apply the YAML files
 3. calicoctl apply -f nodes-bgppeer.yaml
 
 Check the eBGP status
- 
+
 calicoctl get nodes -o wide
 calicoctl get bgpconfig -o wide
 calicoctl get ippool -o wide
