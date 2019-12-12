@@ -10,7 +10,7 @@ Apply the YAML files
 Check the eBGP status
  
  vagrant@k8s-master:~$ calicoctl get nodes -o wide
-NAME         ASN       IPV4              IPV6   
+ NAME         ASN       IPV4              IPV6   
 k8s-master   (63400)   172.16.10.40/24          
 k8s-node1    64516     10.0.0.9/31              
 k8s-node2    64517     10.0.0.11/31             
@@ -19,7 +19,7 @@ k8s-node4    64519     10.0.0.15/31
 
  
  vagrant@k8s-master:~$ calicoctl get bgpconfig -o wide
-NAME      LOGSEVERITY   MESHENABLED   ASNUMBER   
+ NAME      LOGSEVERITY   MESHENABLED   ASNUMBER   
 default   Info          false         63400    
 
 vagrant@k8s-master:~$ calicoctl get ippool -o wide
