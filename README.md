@@ -9,8 +9,8 @@ Apply the YAML files:
 
 Check the eBGP status:
 
-calicoctl get nodes
-calicoctl get bgpconfig
-calicoctl get ippool
-calicoctl get bgppeer
-sudo calicoctl node status
+1. calicoctl get nodes
+2. calicoctl get bgpconfig
+3. calicoctl get ippool
+4. calicoctl get bgppeer
+5. sudo calicoctl node status
